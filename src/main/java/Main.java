@@ -20,9 +20,6 @@ public class Main {
                 ) {
                     while (true) {
                         String request = reader.readLine();
-                        if (request.equals("exit")) {
-                            break;
-                        }
                         String response = engine.search(request).toString();
                         writer.write(response);
                         writer.newLine();
