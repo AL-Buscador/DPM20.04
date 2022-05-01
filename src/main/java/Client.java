@@ -11,13 +11,13 @@ public class Client {
         ) {
             System.out.println("Соединение с сервером установлено.");
             Scanner scanner = new Scanner(System.in);
-                System.out.println("Введите запрос:");
-                String line = scanner.nextLine();
-                writer.write(line);
-                writer.newLine();
-                writer.flush();
-                String response = reader.readLine();
-                System.out.println(response);
+            System.out.println("Введите запрос:");
+            String line = scanner.nextLine();
+            writer.write(line);
+            writer.newLine();
+            writer.flush();
+            String response = reader.readLine();
+            System.out.println(response);
 
         } catch (IOException e) {
             e.printStackTrace();
